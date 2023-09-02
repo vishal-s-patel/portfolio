@@ -13,6 +13,15 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        bodyFont: ['Fira Mono', 'monospace'],
+        titleFont: ['Inter', 'sans-serif']
+      },
+      colors: {
+        'navy-blue': '#0a192f',
+        'lightest-slate': '#CCD6F6',
+        'green': '#64ffda'
+      }
     },
   },
   plugins: [],
