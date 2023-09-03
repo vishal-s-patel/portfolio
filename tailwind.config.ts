@@ -20,7 +20,8 @@ const config: Config = {
       colors: {
         'navy-blue': '#0a192f',
         'lightest-slate': '#CCD6F6',
-        'green': '#64ffda'
+        'green': '#64ffda',
+        'my-slate': '#8892b0'
       }
     },
   },
