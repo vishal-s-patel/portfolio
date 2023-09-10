@@ -21,7 +21,12 @@ const config: Config = {
         'navy-blue': '#0a192f',
         'lightest-slate': '#CCD6F6',
         'green': '#64ffda',
-        'my-slate': '#8892b0'
+        'my-slate': '#8892b0',
+        'lightest-navy': '#233554'
+      },
+      fontSize: {
+        'clamp': "clamp(26px, 5vw, 32px)",
+        'header-clamp': "clamp(16px, 3vw, 20px)"
       }
     },
   },

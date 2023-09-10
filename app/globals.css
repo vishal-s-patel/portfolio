@@ -88,10 +88,15 @@ p > a:hover::after {
     width: 100%;
 }
 
-.numbered-heading {
+/* .numbered-heading {
+    display: flex;
+    align-items: center;
+    position: relative;
     margin: 10px 0px 40px;
+    width: 100%;
     font-size: clamp(26px, 5vw, 32px);
-}
+    white-space: nowrap;
+} */
 
 .numbered-heading::before {
     position: relative;
@@ -128,4 +133,8 @@ ul.skill-list {
     margin: 20px 0px 0px;
     overflow: hidden;
     list-style: none;
+}
+
+.wrapper:hover span {
+    transform: translate(8px, 8px);
 }
