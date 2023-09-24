@@ -21,12 +21,12 @@ const Navbar = () => {
     },
   ];
   return (
-    <header className="flex justify-between items-center fixed top-0 px-12 py-0 w-full bg-navy-blue h-24">
-      <nav className="flex justify-between items-center w-full text-lightest-slate font-bodyFont">
+    <header className="flex justify-between items-center fixed top-0 px-6 py-2.5 md:px-12 md:py-0 w-full bg-navy-blue h-24 backdrop-blur-md">
+      <nav className="flex justify-between items-center relative w-full text-lightest-slate font-bodyFont">
         <div>
           <Image src={logo} alt="logo" width={42} height={42} />
         </div>
-        <div className="flex items-center">
+        <div className="hidden md:flex items-center">
           <ol className="flex items-center justify-between p-0 m-0 list-none">
             {navItems.map((el, index) => {
               return (
@@ -61,6 +61,11 @@ const Navbar = () => {
               Resume
             </Link>
           </motion.div>
+        </div>
+        <div className="relative md:hidden">
+          <span className="absolute h-0.5 w-8 mb-1 -top-2 right-0 bg-green"></span>
+          <span className="absolute h-0.5 w-7 right-0 bg-green"></span>
+          <span className="absolute h-0.5 w-6 mt-1 top-1 right-0 bg-green"></span>
         </div>
       </nav>
     </header>

@@ -50,22 +50,25 @@ const Jobs = () => {
     },
   ];
   return (
-    <section className="my-0 mx-auto py-24 px-0">
+    <section className="max-w-[700px]">
       <Header heading="Where I've worked" counter="02" />
-      <div className="flex">
-        <div className="relative w-max m-0 p-0 list-none" role="tablist">
+      <div className="md:flex">
+        <div
+          className="flex w-[calc(100%+50px)] pl-[25px] -ml-[25px] overflow-x-auto mb-7 md:block relative md:w-max md:m-0 md:p-0 md:overflow-hidden list-none"
+          role="tablist"
+        >
           {jobsData.map((jobs, i) => (
             <button
               key={i + 1}
-              className="w-full text-left h-10 font-bodyFont pt-0 px-5 pb-0.5 border-l-2 border-lightest-navy text-xs"
+              className="flex justify-center items-center min-w-[120px] px-4 border-l-0 border-b-2 md:block md:w-full text-left h-10 font-bodyFont pt-0 md:px-5 pb-0.5 md:border-l-2 md:border-b-0 border-lightest-navy text-xs"
             >
               {jobs.companyName}
             </button>
           ))}
         </div>
-        <div className="relative w-full ml-5">
+        <div className="relative w-full md:ml-5">
           <div className="w-full h-auto py-2.5 px-1">
-            <h3 className="mb-0.5 text-2xl font-medium">
+            <h3 className="mb-0.5 text-xl font-medium">
               <span>Software Engineer</span>
               <span className="text-green">
                 &nbsp;@&nbsp;{" "}
@@ -77,11 +80,11 @@ const Jobs = () => {
                 </Link>
               </span>
             </h3>
-            <p className="mb-6 text-slate-500 font-bodyFont text-sm">
+            <p className="mb-6 text-slate-500 font-bodyFont text-xs">
               March 2024 - Present
             </p>
             <div>
-              <ul className="text-lg">
+              <ul className="text-sm">
                 {jobsData[0].tasks.map((task, i) => (
                   <li className="relative pl-7 mb-2.5">
                     <span className="absolute left-0 text-green">▹</span>

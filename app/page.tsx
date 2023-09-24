@@ -7,7 +7,7 @@ import Layout from "./components/MyLayout";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       <Social />
       <Email />

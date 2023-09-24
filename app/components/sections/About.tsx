@@ -32,10 +32,10 @@ const About = () => {
     },
   ];
   return (
-    <section>
+    <section className="max-w-4xl">
       {/* <h2 className="numbered-heading">About Me</h2> */}
       <Header heading="About Me" counter="01" />
-      <div className="grid grid-cols-[3fr_2fr] gap-12">
+      <div className="md:grid grid-cols-[3fr_2fr] gap-12">
         <div>
           <div>
             <p>
@@ -91,7 +91,7 @@ const About = () => {
             ))}
           </ul>
         </div>
-        <div className="relative max-w-xs">
+        <div className="w-3/5 md:w-full mt-12 mx-auto mb-0 md:m-0 relative max-w-xs">
           <div className="shadow-[0_10px_30px_-15px_rgba(2,12,27,0.7)] block relative w-full transition-all rounded bg-green wrapper hover:-translate-x-1 hover:-translate-y-1">
             <span className="block absolute w-full h-full rounded transition border-solid top-0 left-0 bg-navy-blue mix-blend-screen"></span>
             <div className="">

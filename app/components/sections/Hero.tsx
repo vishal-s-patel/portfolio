@@ -3,7 +3,7 @@ import * as React from "react";
 
 const Hero = () => {
   const one = (
-    <h1 className="mt-0 mr-0 mb-7 ml-1 text-green font-bodyFont font-normal intro-title">
+    <h1 className="mt-[100px] md:mt-0 mr-0 mb-7 ml-1 text-green font-bodyFont font-normal intro-title">
       Hi, my name is
     </h1>
   );
@@ -34,7 +34,7 @@ const Hero = () => {
   const five = (
     <Link
       href="#"
-      className="text-green bg-transparent border border-solid border-green rounded py-5 px-7 text-sm mt-12 transition-all hover:shadow-[3px_3px_0_0_#64ffda] hover:-translate-y-1 hover:-translate-x-1"
+      className="text-green bg-transparent font-bodyFont border border-solid border-green rounded py-5 px-7 text-sm mt-12 transition-all hover:shadow-[3px_3px_0_0_#64ffda] hover:-translate-y-1 hover:-translate-x-1"
     >
       Check out my Github!
     </Link>
@@ -42,9 +42,11 @@ const Hero = () => {
 
   const items = [one, two, three, four, five];
   return (
-    <section className="flex justify-center flex-col items-start p-0 h-screen">
+    <section className="flex justify-center flex-col items-start p-0 min-h-screen">
       {items.map((item, index) => (
-        <div key={index}>{item}</div>
+        <div key={index} className={`delay-${(index + 1) * 100}`}>
+          {item}
+        </div>
       ))}
     </section>
   );

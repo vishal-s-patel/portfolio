@@ -9,7 +9,7 @@ const Email = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1.5 }}
-      className="w-10 fixed bottom-0 left-auto right-10 text-[#a8b2d1]"
+      className="hidden md:block w-10 fixed bottom-0 left-auto right-10 text-[#a8b2d1]"
     >
       <div className="flex flex-col items-center relative after:content-[''] after:block after:w-px after:h-20 after:bg-[#a8b2d1] after:my-0 after:mx-auto">
         <Link

@@ -26,7 +26,8 @@ const config: Config = {
       },
       fontSize: {
         'clamp': "clamp(26px, 5vw, 32px)",
-        'header-clamp': "clamp(16px, 3vw, 20px)"
+        'header-clamp': "clamp(16px, 3vw, 20px)",
+        'contact-title': "clamp(40px, 5vw, 60px)"
       }
     },
   },

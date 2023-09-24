@@ -32,7 +32,7 @@ const Social = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1.5 }}
-      className="w-10 fixed bottom-0 left-10 right-auto text-[#a8b2d1]"
+      className="hidden md:block w-10 fixed bottom-0 left-10 right-auto text-[#a8b2d1]"
     >
       <ul className="flex flex-col items-center m-0 p-0 list-none after:content-[''] after:block after:w-px after:h-20 after:bg-[#a8b2d1] after:my-0 after:mx-auto">
         {socialMedia.map((social) => {

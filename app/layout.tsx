@@ -22,7 +22,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-navy-blue m-0 w-full text-my-slate font-titleFont leading-tight">
+      <body className="text-lg md:text-xl bg-navy-blue m-0 w-full text-my-slate font-titleFont leading-tight">
         {children}
       </body>
     </html>
